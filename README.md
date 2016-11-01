@@ -17,7 +17,7 @@ TARGET_ROW=1
 ```
 
 TARGET_URL: your king of time "出勤状況一覧" URL  
-TARGET_ROW: row number to check user
+TARGET_ROW: row number to check
 
 and execute this to notify.
 
@@ -27,12 +27,13 @@ bundle exec rake notifier
 
 ## cron example
 
-```dakoku-bot.sh
+dakoku-bot.sh
+```
 cd ~/repo/dakoku-bot
 ~/.rbenv/shims/bundle exec rake notifier
 ```
 
+crontab
 ```
-$ crontab -l
 */30 * * * * ~/script/dakoku-bot.sh
 ```
